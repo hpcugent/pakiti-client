@@ -2,7 +2,7 @@
 
 PACKAGE=pakiti
 VERSION=$(grep "Version:.*[0-9]" ${PACKAGE}.spec | tr -s " " |  awk '{print $2;}')
-RELEASE=$(grep "Release:.*[1-9]" ${PACKAGE}.spec | tr -s " " | awk '{print $2}')
+RELEASE=$(grep "%global rel.*[-1-9]" ${PACKAGE}.spec | tr -s " " | awk '{print $3}')
 
 if [ "${RELEASE}" -gt 1 ]; then
     SUFFIX=${VERSION}-${RELEASE}
