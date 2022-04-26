@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGE=pakiti
+PACKAGE=pakiti-client
 VERSION=$(grep "Version:.*[0-9]" ${PACKAGE}.spec | tr -s " " |  awk '{print $2;}')
 RELEASE=$(grep "%global rel.*[-1-9]" ${PACKAGE}.spec | tr -s " " | awk '{print $3}')
 
