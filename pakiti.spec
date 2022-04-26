@@ -1,7 +1,7 @@
 Summary:	Patching status monitoring tool
 Name:		pakiti-client
-Version:	X
-Release:	1%{?dist}
+Version:	3.0.3
+Release:	1
 URL:		https://github.com/CESNET/pakiti-client
 License:	ASL 2.0
 Group:		Applications/Internet
