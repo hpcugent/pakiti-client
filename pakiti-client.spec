@@ -1,11 +1,12 @@
 Summary:	Patching status monitoring tool
 Name:		pakiti-client
-Version:	X
-Release:	1%{?dist}
+Version:	3.0.3
+%global rel	1
+Release:	%{rel}.%{gittag}.ug
 URL:		https://github.com/CESNET/pakiti-client
 License:	ASL 2.0
 Group:		Applications/Internet
-Source0:	%{url}/archive/v%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch:	noarch
 BuildRequires:	perl
